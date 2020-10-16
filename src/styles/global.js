@@ -4,8 +4,8 @@ import "react-redux-toastr/lib/css/react-redux-toastr.min.css";
 
 export default createGlobalStyle`
     @import 'react-redux-toastr/src/styles/index';
-  
-  
+
+
   *{
     margin: 0;
     padding: 0;
@@ -19,12 +19,12 @@ export default createGlobalStyle`
 
   html,body, #root{
     height:100%;
-    
+
   }
 
   body{
     -webkit-font-smoothing: antialiased;
-    
+
   }
 
   body, input, button{
@@ -43,6 +43,6 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
- 
+
 
 `;
