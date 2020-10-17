@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import ReduxToastr from "react-redux-toastr";
 
-import Provider from "react-redux/Provider";
+import { Provider } from "react-redux";
 import { store } from "./store";
 
 import GlobalStyle from "./styles/global";
