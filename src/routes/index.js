@@ -1,25 +1,19 @@
-import React, { lazy, Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
-import { ConnectedRouter } from "connected-react-router";
+import React, { Suspense } from "react";
 
-import Loader from "../components/loader";
+import { Switch } from "react-router-dom";
+
+import { ConnectedRouter } from "connected-react-router";
 
 import history from "./history";
 
-const Employee = lazy(() => import("../pages/employee/list"));
-
-export default function Routes() {
+function Routes() {
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<div>Loader</div>}>
       <ConnectedRouter history={history}>
-        <Switch>
-          <Route
-            path="/"
-            exact
-            component={(props) => <Employee {...props} />}
-          />
-        </Switch>
+        <Switch />
       </ConnectedRouter>
     </Suspense>
   );
 }
+
+export default Routes;

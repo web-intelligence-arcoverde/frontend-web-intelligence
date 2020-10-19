@@ -1,5 +1,5 @@
 {
-  "name": "front-3lm-informatica",
+  "name": "base",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,7 @@
     "axios": "^0.20.0",
     "connected-react-router": "^6.8.0",
     "fontsource-roboto": "^3.0.3",
+    "history": "^5.0.0",
     "material-table": "^1.69.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -27,6 +28,8 @@
     "styled-components": "^5.2.0"
   },
   "scripts": {
+    "lint:win": "eslint \"*/**/*.{js,ts,tsx}\" --quiet --fix",
+    "lint:mac": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
