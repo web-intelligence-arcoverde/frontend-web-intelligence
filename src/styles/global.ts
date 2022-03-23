@@ -13,10 +13,11 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video,a {
     margin: 0;
     padding: 0;
     border: 0;
+    text-decoration:none ;
     font-size: auto;
     font: inherit;
     vertical-align: baseline;
@@ -29,8 +30,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
+ol, ul, li{
     list-style: none;
+    
 }
 blockquote, q {
     quotes: none;
@@ -43,4 +45,7 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+button{
+    cursor: pointer;
 }`

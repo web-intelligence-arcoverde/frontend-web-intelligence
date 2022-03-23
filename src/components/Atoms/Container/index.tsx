@@ -10,6 +10,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   display: flex;
+  width: 100%;
   flex-direction: ${({ direction }) => (direction ? 'row' : 'column')};
   justify-content: ${props => (props.justify ? props.justify : 'center')};
   align-items: ${props => (props.align ? props.align : 'center')};
