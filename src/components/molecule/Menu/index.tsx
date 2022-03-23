@@ -13,7 +13,7 @@ export const Menu = () => {
       <li>
         <a href="#">About us</a>
       </li>
-      <div>
+      <div style={{ width: '150px' }}>
         <Button title="Get Ticket" onClick={() => {}} />
       </div>
     </List>
